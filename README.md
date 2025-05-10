@@ -25,7 +25,7 @@ using a custom exceptionFactory:
 +UTs
 
 PS: Honestly, I'm a bit confused because , but in NestJS, interceptors are triggered after guards,
-which guards will do all the work and then the token pre validation interceptor would be unnecessary,
+which means guards will do all the work and then the token pre validation interceptor would be unnecessary,
 A more appropriate solution might be to use a middleware for initial token pre-validation, and then let the guard handle the full validation afterward.
 
 
